@@ -46,48 +46,8 @@ export function Footer() {
           alignContent="center"
           spacing={2}
           sx={{ flexDirection: { xs: 'column', sm: 'row' } }}
-        >
-          <Grid item>
-            <Link
-              href="https://dexkit.com/contact-us/"
-              color="inherit"
-              target="_blank"
-            >
-              <FormattedMessage
-                id="contact.us"
-                defaultMessage="Contact us"
-                description="Contact us"
-              />
-            </Link>
-          </Grid>
-          <Grid item>
-            <Typography variant="body1" align="center">
-              <Link href="/" color="primary">
-                {appConfig.name}
-              </Link>{' '}
-              <FormattedMessage
-                defaultMessage="is powered by"
-                id="is.powered.by"
-                description="is powered by"
-              />{' '}
-              <Link variant="inherit" href="https://0x.org/" color="inherit">
-                <strong>0x</strong>
-              </Link>{' '}
-              <FormattedMessage
-                id="and.made.with.love.by"
-                defaultMessage="and made with ❤️ by"
-                description="and made with ❤️ by"
-              />{' '}
-              <Link
-                variant="inherit"
-                href="https://www.dexkit.com"
-                target="_blank"
-                color="inherit"
-              >
-                <strong>DexKit</strong>
-              </Link>
-            </Typography>
-          </Grid>
+        >           
+       
           <Grid item>
             <Stack direction="row" spacing={1}>
               {appConfig?.social &&
